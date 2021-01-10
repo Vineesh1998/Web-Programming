@@ -1,0 +1,15 @@
+#div,h3
+{
+    border:outset rgb(226, 43, 134);
+    background-color: aqua;
+    font-size: 16px;
+    text-align: center;
+}
+body
+{
+    background-color: purple;
+}
+p
+{
+    color:blue;
+}
