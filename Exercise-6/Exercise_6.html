@@ -1,0 +1,175 @@
+<html>
+    <title>Java Script</title>
+    <head>
+        <script lang="javascript">
+            function length()
+            {
+                a=document.getElementById("str").value;
+                b=a.length;
+                alert("Length of string is ="+b);
+            }
+            function index()
+            {
+                a=document.getElementById("str").value;
+                b=prompt("Enter the character :");
+                c=a.indexOf(b);
+                alert("Index of string is ="+b+"="+c);
+            }
+            function last_index()
+            {
+                a=document.getElementById("str").value;
+                b=prompt("Enter a character :");
+                c=a.lastIndexOf(b);
+                alert("Last index of the string is ="+b+"="+c);
+            }
+            function search()
+            {
+                a=document.getElementById("str").value;
+                b=prompt("Enter the character :");
+                c=a.search(b);
+                alert("Enter a string ="+b+"="+c);
+            }
+            function slice()
+            {
+                a=document.getElementById("str").value;
+                b=prompt("Enter the starting index :");
+                c=prompt("Enter the last index :");
+                d=a.slice(b,c);
+                alert("New String ="+d);
+            }
+            function substring()
+            {
+                a=document.getElementById("str").value;
+                b=prompt("Enter the starting index :");
+                c=prompt("Enter the last index :");
+                d=a.substring(b,c);
+                alert("New String ="+d);
+            }
+            function substr()
+            {
+                a=document.getElementById("str").value;
+                b=prompt("Enter the starting index :");
+                c=prompt("Enter the last index :");
+                d=a.substr(b,c);
+                alert("New String ="+d);
+            }
+            function replace()
+            {
+                a=document.getElementById("str").value;
+                b=prompt("Enter the old string :");
+                c=prompt("Enter the new string :");
+                d=a.replace(b,c);
+                alert("New String ="+d);
+            }
+            function upper()
+            {
+                a=document.getElementById("str").value;
+                b=a.toUpperCase();
+                alert(b);
+            }
+            function lower()
+            {
+                a=document.getElementById("str").value;
+                b=a.toLowerCase();
+                alert(b);
+            }
+            function round()
+            {
+                a=document.getElementById("num").value;
+                b=Math.round(a);
+                alert(b);
+            }
+            function power()
+            {
+                a=document.getElementById("num").value;
+                b=prompt("Enter power :");
+                c=Math.pow(a,b);
+                alert("POWER ="+c);
+            }
+            function sqroot()
+            {
+                a=document.getElementById("num").value;
+                b=Math.sqrt(a);
+                alert("SQUARE ROOT ="+b);
+            }
+            function abs()
+            {
+                a=document.getElementById("num").value;
+                b=Math.abs(a);
+                alert("ABSALUTE ="+b);
+            }
+            function cel()
+            {
+                a=document.getElementById("num").value;
+                b=Math.ceil(a);
+                alert("CEIL ="+b);
+            }
+            function floor()
+            {
+                a=document.getElementById("num").value;
+                b=Math.floor(a);
+                alert("FLOOR"+b);
+            }
+            function random()
+            {
+                alert(Math.random());
+            }
+            function pi()
+            {
+                alert(Math.PI);
+            }
+        </script>
+    </head>
+ <body bgcolor="purple">
+     <table align="center" width:75% style="background-color: darkorange;">
+         <tr>
+             <th><h1>STRING FUNCTIONS</h1></th>
+             <th><h1>MATH FUNCTIONS</h1></th>
+         </tr>
+         <tr>
+             <th><h1>Enter a string :
+             <input type="text" id="str" style="height:40px; width:80%;"></h1></th>
+             <th><h1>Enter a number :
+                 <input type="text" id="num" style="height:40px; width:80%;"></h1>
+            </th>
+        </tr>
+        <tr>
+     <th><input type="button" name="butt1" value="LENGTH" style="height:44px; width:25%;" onClick="length()">
+         <input type="button" name="butt2" value="INDEXOF" style="height:44px; width:25%;" onClick="index()">
+        </th>
+        <th><input type="button" name="buttA" value="ROUND" style="height:44px; width:25%;" onClick="round()">
+            <input type="button" name="buttB" value="POWER OF" style="height:44px; width:25%;" onClick="power()">
+        </th>
+        </tr>
+        <tr>
+            <th><input type="button" name="butt3" value="LASTINDEXOF" style="height:44px; width:25%;" onClick="last_index()">
+                <input type="button" name="butt4" value="SEARCH" style="height:44px; width:25%;" onClick="search()">
+            </th>
+            <th><input type="button" name="buttC" value="SQUARE ROOT" style="height:44px; width:25%;" onClick="sqroot()">
+                <input type="button" name="buttD" value="ABSALUTE" style="height:44px; width:25%;" onClick="abs()">
+            </th>
+        </tr>
+        <tr>
+            <th><input type="button" name="butt5" value="SLICE" style="height:44px; width:25%;" onClick="slice()">
+                <input type="button" name="butt6" value="SUBSTRING" style="height:44px; width:25%;" onClick="substring()">
+            </th>
+            <th><input type="button" name="buttE" value="CEIL" style="height:44px; width:25%;" onClick="cel()">
+                <input type="button" name="buttF" value="FLOOR" style="height:44px; width:25%;" onClick="floor()">
+            </th>
+        </tr>
+        <tr>
+            <th><input type="button" name="butt7" value="SUBSTR" style="height:44px; width:25%;" onClick="substr()">
+                <input type="button" name="butt8" value="REPLACE" style="height:44px; width:25%;" onClick="replace()">
+            </th>
+            <th><input type="button" name="buttG" value="RANDOM" style="height:44px; width:25%;" onClick="random()">
+                <input type="button" name="buttH" value="PI" style="height:44px; width:25%;" onClick="pi()">
+            </th>
+        </tr>
+        <tr>
+            <th><input type="button" name="butt9" value="ToUpperCase" style="height:44px; width:25%;" onClick="upper()">
+                <input type="button" name="butt10" value="ToLowerCase" style="height:44px; width:25%;" onClick="lower()">
+        </th>
+        </tr>
+        </table>
+    </body>
+</html>
