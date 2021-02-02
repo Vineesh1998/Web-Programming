@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+        <style>
+            td
+            {
+                font-size:20px;  
+                color:rgb(15, 1, 11);  
+            }
+            body
+            {
+                background-color: rgb(100, 0, 83);
+            }
+            div
+            {
+                margin:auto;
+                width:50%;
+                height:75%;
+                background-color: rgb(192, 192, 58);
+                text-align:center;
+                border:10px outset rgb(240, 150, 6);
+            }
+            input
+            {
+                background-color: rgb(32, 218, 63);
+                height:30;
+            }
+        </style>
+        <script>
+            function myfunction()
+            {
+            var name=document.myform.name.value;
+            var email=document.myform.email.value;
+            var password=document.myform.password.value;
+            var phone=document.myform.phone.value;
+
+            if (name==null || name=="")
+            {
+                alert("Name can not be blank");
+                return false;
+            }
+            if (email==null || email=="")
+            {
+                alert("Email can not be blank");
+                return false;
+            }
+            if (password.length<6)
+            {
+                alert("Password must be six character");
+                return false;
+            }
+            if (phone== "")
+            {
+                alert("Enter Mobile Number")
+                return false;
+            }
+            else if (isNaN(phone)) 
+            {
+                alert("Enter valid Mobile number");
+                return false;
+            }
+            else if (phone.length != 10) 
+            {
+                alert("Enter Mobile number with 10 digit");
+                return false;
+            }
+            if ((myform.gender[0].checked==false)&&(myform.gender[1].checked==false))
+            {
+                alert("Please select the gender");
+                return false;
+            }
+            if ((myform.lang1.checked==true) || (myform.lang2.checked==true) || (myform.lang3.checked==true))
+            {
+                return true;
+            } 
+            else
+            {
+                alert("Please select atleast one known language");
+                return false;
+            }
+            }
+        </script>
+        <body>
+            <div>
+                <h1 align="center" style="color:rgb(5, 5, 5);">FORM VALIDATION</h1>
+                <table align="center">
+                <tr>
+                <form name="myform" method="post" action="" onsubmit="return myfunction()">
+                <td>Name:</td><td><input type="text" name="name"></td></tr>
+                <tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+                <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+                <tr><td>Phone:</td><td><input type="phone" name="phone"></td></tr>
+                <tr><td>Gender:</td><td><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female</td></tr>
+                <tr><td>Languages Known:</td><td colspan="2"><input type="checkbox" name="lang1" value="Malayalam">Malayalam<input type="checkbox" name="lang2" value="english">English<input type="checkbox" name="lang3" value="hindi">Hindi</td></tr>
+                <tr><td colspan="2" align="center"><input type="submit" value="submit" style="background-color:rgb(0, 128, 128); height:40; width:30%; color:indigo"></td></tr>
+                </form>
+                </table>
+            </div>
+        </body>
+</html>
