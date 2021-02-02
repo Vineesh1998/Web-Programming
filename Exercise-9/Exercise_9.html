@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Color Change</title>
+        <style>
+            .button
+            {
+                height: 40;
+                width: 20%;
+                background-color: darkorange;
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <center><button type="button" id="demo" class="button">***Click Here***</button></center>
+    </body>
+    <script>
+        document.getElementById("demo").addEventListener("click",event_handling);
+        function event_handling()
+        {
+            var randcol="";
+            for(i=0;i<6;i++)
+        {
+            randcol+=Math.floor(Math.random()*10);
+        }
+            document.body.style.background="#"+randcol;
+        }
+    </script>
+</html>
