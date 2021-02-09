@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Page-1</title>
+    </head>
+    <style>
+        h1
+        {
+            color:red;
+        }
+    </style>
+    <body>
+        <center id="center">
+        <img src="jerry.png" id="img" width="50%" height="50%">
+        <h1 id="text1">Bring the mouse here </h1>
+        <h1 id="text2">Move the mouse back </h1>
+        </center>
+    </body>
+    <script>
+        
+        document.getElementById("center").addEventListener("mouseover",img1);
+        document.getElementById("center").addEventListener("mouseout",img2);
+
+        function img1()
+        {
+            document.getElementById("img").src="tom.png";
+            document.getElementById("text1").style.display="none";
+            document.getElementById("text2").style.display="block";
+            document.body.style.background="orange";
+        }
+        function img2()
+        {
+            document.getElementById("img").src="jerry.png";
+            document.getElementById("text1").style.display="block";
+            document.getElementById("text2").style.display="none";
+            document.body.style.background="purple";
+        }
+    </script>
+</html>
