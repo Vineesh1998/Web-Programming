@@ -1,0 +1,106 @@
+#addbook{
+	display: none;
+}
+#available{
+	display: none;
+}
+#newbook{
+	display: none;
+}
+#not_available{
+	display: none;
+}
+#bk_dt{
+	display: none;
+}
+#all{
+	display: block;
+}
+#reg1{
+	display: none;
+}
+.span{
+	float: left;
+}
+.span_left{
+	width:300px;
+	background-color: rgba(0,0,0,.5);
+	height:535px;
+}
+.container{
+	padding-top: 120px;
+
+}
+.btn{
+	width:300px;
+	color:black;
+	font-size: 19px;
+}
+.content{
+	margin-left: 300px;
+	background-color: rgba(256,256,256,.75);
+}
+.content1{
+	background-color: rgba(256,256,256,.75);
+	height: 500px;
+}
+.content3{
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: rgba(256,256,256,.75);
+	height: 500px;
+}
+.content2{
+	margin-left: 300px;
+	background-color: rgba(256,256,256,.75);
+	height: 535px;
+}
+.contents{
+	overflow: auto;
+	padding: 50px;
+	height: 72%;
+	padding-bottom: 10px;
+}
+.txt_head{
+	font-size: 25px;
+	font-family: serif;
+	text-decoration: underline;
+	padding-bottom: 10px; 
+}
+table{
+	width: 700px;
+}
+.tbl{
+	width:500px;
+}
+.tbl1{
+	width:400px;
+}
+.tbl2{
+	width:800px;
+}
+td{
+	text-align: center;
+}
+.td{
+	text-align: left;
+}
+.pad{
+	margin-left: -70px;
+	padding: 20px;
+}
+.btn1{
+	margin-top: 20px;
+	margin-left: -70px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 20px;
+	width: 100px;
+}
+a{
+	text-decoration: none;
+}
+td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
